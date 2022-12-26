@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all ease-in-out 1s;
+}
+
+h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+}
+
+.lines-area {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -3px;
+}
+
+.line {
+    width: 145px;
+    height: 5px;
+    position: absolute;
+    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.line .trace {
+    width: 18px;
+    height: 100%;
+    background-color: #FFF;
+    border-radius: 14px;
+}
+
+.pointers {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -100%;
+
+}
+
+.p {
+    transform-origin: left;
+    transform: rotate(0deg);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.p_sec {
+    width: 100px;
+    height: 3px;
+    background-color: #F00;
+}
+
+.p_min {
+    width: 120px;
+    height: 7px;
+    background-color: white;
+}
+
+.p_hr {
+    width: 70px;
+    height: 10px;
+    background-color: white;
+}
+
+.center {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.digital {
+    color: #FFF;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+footer a {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
